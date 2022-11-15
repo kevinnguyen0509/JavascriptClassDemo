@@ -1,0 +1,10 @@
+﻿@model List<UserRole>
+
+@foreach (var item in Model)
+{
+    <tr>
+        <th scope="row" class="editBtn">Edit</th>
+        <td>@item.Name</td>
+        <td>@item.Role</td>
+    </tr>
+}

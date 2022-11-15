@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+    <div class="col-12">
+        <form>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control loginFormTxt" id="emailTxt" aria-describedby="emailHelp" placeholder="Enter email">
+
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control loginFormTxt" id="emailTwoTxt" aria-describedby="emailHelp" placeholder="Enter email">
+
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control loginFormTxt" id="passwordTxt" placeholder="Password">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputnumber1">Number</label>
+                <input type="number" class="form-control loginFormTxt" id="numberTxt" placeholder="0.00">
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+
+            <div class="form-check">
+                <input type="text" class="form-control" id="textBox">
+                <label class="form-check-label" for="exampleCheck1">Text Box Example</label>
+            </div>
+            <button id="FormSubmitButton" type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>
+
+<script type="module" src="~/js/Home/Index.js"></script>
