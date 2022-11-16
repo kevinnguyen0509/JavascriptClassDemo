@@ -53,5 +53,18 @@ namespace JavascriptClassDemo.Controllers
             userRoleList.Add(userRole);//This would be in its own business logic model/class
             return PartialView("Partials/userRoleTableInfo", userRoleList);
         }
+
+        public IActionResult DeleteUser(string name)
+        {
+            for(int i = 0; i < userRoleList.Count; i++)
+            {
+                if (userRoleList[i].Name.Contains(name))
+                {
+                    userRoleList.RemoveAt(i);
+                }
+            }
+           
+            return PartialView("Partials/userRoleTableInfo", userRoleList);
+        }
     }
 }

@@ -3,7 +3,7 @@
 @foreach (var item in Model)
 {
     <tr>
-        <th scope="row" class="editBtn">Edit</th>
+        <th scope="row" class="editBtn" deleteby="@item.Name">Edit</th>
         <td>@item.Name</td>
         <td>@item.Role</td>
     </tr>

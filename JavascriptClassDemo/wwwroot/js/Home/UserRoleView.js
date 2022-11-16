@@ -8,11 +8,13 @@ let formContainerID = 'userRoleTable';
 let nameTxtID = 'nameTxt';
 let roleTxtID = 'roleTxt';
 
+
 let userSubmitBtnID = 'userSubmitBtn';
 
 const UserRole = new UserRoleClass();
 const nameInputBox = new ValidationClass(nameTxtID, userSubmitBtnID);
 const roleTxtInputBox = new ValidationClass(roleTxtID, userSubmitBtnID);
+let deleteBtn = document.querySelectorAll(".editBtn");
 nameInputBox.Required("You Need A Name").SetMaxCharactersAllowed(10);
 roleTxtInputBox.RequiredDefault().SetMaxCharactersAllowed(10);
 
@@ -23,5 +25,11 @@ UserForm.addEventListener('submit', function (e) {
     
 
 });
+
+UserRole.attachDeleteListener(formContainerID);
+
+
+
+
 
 
